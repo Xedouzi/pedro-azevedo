@@ -778,9 +778,13 @@ function montarDas() {
   const faltam = Math.round((venc - hoje) / 864e5);
   const semana = ["domingo", "segunda-feira", "terça-feira", "quarta-feira", "quinta-feira", "sexta-feira", "sábado"][venc.getUTCDay()];
   $("#das-mes").textContent = MESES[mes - 1].slice(0, 3) + ".";
-  $("#das-texto").textContent = faltam === 0
-    ? `Vence hoje, ${semana}, 20 de ${MESES[mes - 1]}.`
-    : `Próximo vencimento: ${semana}, 20 de ${MESES[mes - 1]}. ${faltam === 1 ? "Falta 1 dia" : `Faltam ${faltam} dias`}.`;
+  const fimDeSemana = venc.getUTCDay() === 0 || venc.getUTCDay() === 6;
+  /* dia 20 no fim de semana: nao afirmar a data, so avisar (a ressalva confirma com o escritorio) */
+  $("#das-texto").textContent = fimDeSemana
+    ? `O dia 20 de ${MESES[mes - 1]} cai num ${semana}. Confirme com o escritório a data de pagamento.`
+    : faltam === 0
+      ? `Vence hoje, ${semana}, 20 de ${MESES[mes - 1]}.`
+      : `Próximo vencimento: ${semana}, 20 de ${MESES[mes - 1]}. ${faltam === 1 ? "Falta 1 dia" : `Faltam ${faltam} dias`}.`;
   $("#zap-das").href = zap("Olá! Vim pelo site do escritório Pedro Azevedo. Sou MEI e gostaria de ajuda com a guia do DAS deste mês.");
 }
 montarDas();
