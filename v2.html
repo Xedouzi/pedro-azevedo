@@ -357,7 +357,22 @@
   .predio { display: grid; gap: .4rem; margin-top: .5rem; }
   .predio img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; border-radius: var(--raio); }
   .predio figcaption { font-size: .92rem; color: var(--tinta-2); }
-  .mapa { width: 100%; height: 100%; min-height: 380px; border: 0; border-radius: var(--raio); background: var(--linha); }
+  /* o mapa do Google so carrega no clique: sem cookies de terceiros ao abrir a pagina */
+  .mapa {
+    position: relative; display: grid; grid-template-columns: minmax(0, 1fr); place-items: center; width: 100%; height: 100%; min-height: 380px; padding: clamp(.75rem, 4vw, 1.25rem); overflow: hidden; border-radius: var(--raio);
+    /* ruas desenhadas: quadras e uma avenida na diagonal */
+    background-color: var(--nevoa);
+    background-image:
+      linear-gradient(115deg, transparent 47%, #E1E6FB 47%, #E1E6FB 51%, transparent 51%),
+      repeating-linear-gradient(0deg, transparent 0 54px, #E1E6FB 54px 60px),
+      repeating-linear-gradient(90deg, transparent 0 84px, #E1E6FB 84px 90px);
+  }
+  .mapa-capa { display: grid; justify-items: center; gap: .85rem; max-width: 100%; min-width: 0; padding: clamp(1rem, 4vw, 1.4rem) clamp(.9rem, 4vw, 1.6rem); text-align: center; background: var(--branco); border-radius: var(--raio); box-shadow: 0 14px 34px -20px rgba(10, 20, 80, .45); }
+  .mapa-pino { width: 2.25rem; height: 2.25rem; fill: none; stroke: var(--azul); stroke-width: 1.8; }
+  .mapa-endereco { display: grid; gap: .15rem; overflow-wrap: anywhere; }
+  .mapa-endereco strong { font-weight: 600; }
+  .mapa-endereco span { color: var(--tinta-2); }
+  .mapa-quadro { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
   @media (max-width: 820px) { .contato-grade { grid-template-columns: minmax(0, 1fr); } .mapa { min-height: 280px; } }
 
   /* ---------- rodape compacto ---------- */
@@ -536,8 +551,13 @@
           <figure class="predio"><img src="img/predio-fachada.webp" width="1050" height="1400" loading="lazy" alt="Fachada do prédio New Center XV de Novembro, com vidro azul e escada de entrada"><figcaption>O escritório fica no prédio New Center.</figcaption></figure></div>
         <div><div class="horario-titulo"><h3>Horário</h3><span class="horario-agora" id="horario-agora"></span></div><dl class="horarios" id="horarios"></dl></div>
       </div>
-      <iframe class="mapa" title="Mapa: Pedro Azevedo Contabilidade na Rua XV de Novembro, 612, Cravinhos" loading="lazy"
-        src="https://maps.google.com/maps?q=-21.3393006,-47.7303089&amp;hl=pt-BR&amp;z=17&amp;output=embed" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <div class="mapa" id="mapa">
+        <div class="mapa-capa">
+          <svg class="mapa-pino" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-6.5-5.6-6.5-11a6.5 6.5 0 0 1 13 0c0 5.4-6.5 11-6.5 11Z"/><circle cx="12" cy="10" r="2.4"/></svg>
+          <p class="mapa-endereco"><strong>Rua XV de Novembro, 612, sala 106</strong><span>Prédio New Center, Centro, Cravinhos</span></p>
+          <button class="btn" type="button" id="mostrar-mapa">Mostrar o mapa</button>
+        </div>
+      </div>
     </div>
   </section>
 </main>
@@ -766,6 +786,13 @@ visor.addEventListener("touchend", (e) => {
   if (toqueX === null) return;
   const dx = e.changedTouches[0].clientX - toqueX; toqueX = null;
   if (Math.abs(dx) > 50) mostrarFoto(fotoAtual + (dx < 0 ? 1 : -1), true);
+});
+
+/* ---------- mapa: so carrega no clique ---------- */
+$("#mostrar-mapa").addEventListener("click", () => {
+  $("#mapa").innerHTML = '<iframe class="mapa-quadro" title="Mapa: Pedro Azevedo Contabilidade na Rua XV de Novembro, 612, Cravinhos" ' +
+    'src="https://maps.google.com/maps?q=-21.3393006,-47.7303089&hl=pt-BR&z=17&output=embed" referrerpolicy="no-referrer-when-downgrade"></iframe>';
+  $("#mapa iframe").focus();
 });
 
 /* ---------- lembrete do DAS do MEI (vence todo dia 20) ---------- */
