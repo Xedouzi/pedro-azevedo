@@ -365,10 +365,11 @@
   .fato-agora { display: inline-flex; align-items: center; gap: .55rem; }
   .fato-agora i { width: .6rem; height: .6rem; border-radius: 50%; background: #5BE38F; flex: none; }
   .fato-agora.fechado i { background: #FF8F87; }
+  /* no celular so a nota fica: endereco e horario ja estao no Como chegar */
   @media (max-width: 820px) {
     .fatos-grade { grid-template-columns: minmax(0, 1fr); }
-    .fato { min-height: 0; padding: .85rem 0; }
-    .fato + .fato { padding-left: 0; border-left: 0; border-top: 1px solid rgba(255, 255, 255, .16); }
+    .fato { min-height: 0; padding: .7rem 0; }
+    .fato + .fato { display: none; }
   }
 
   /* como funciona: 3 passos ligados por uma linha */
@@ -537,9 +538,9 @@
         <h2 id="titulo-como">Como funciona</h2>
       </div>
       <ol class="passos">
-        <li><h3>Você conta o que precisa</h3><p>Pelo WhatsApp, por telefone ou aqui no escritório, na sala 106 do New Center.</p></li>
-        <li><h3>Separamos os documentos</h3><p>Indicamos o que é necessário para o seu caso e conferimos tudo antes de dar entrada.</p></li>
-        <li><h3>Cuidamos dos registros e prazos</h3><p>Registros, guias e declarações ficam com o escritório, e você acompanha cada etapa.</p></li>
+        <li><h3>Primeiro atendimento</h3><p>Pelo WhatsApp, por telefone ou presencialmente, na sala 106 do prédio New Center.</p></li>
+        <li><h3>Análise e documentação</h3><p>Avaliamos a sua situação, informamos os documentos necessários e conferimos tudo antes de qualquer protocolo.</p></li>
+        <li><h3>Execução e acompanhamento</h3><p>Realizamos os registros e cuidamos das guias e declarações, com acompanhamento de cada etapa.</p></li>
       </ol>
     </div>
   </section>
