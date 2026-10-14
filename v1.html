@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="only light">
+<meta name="theme-color" content="#FFFFFF">
+<title>Pedro Azevedo Contabilidade e Assessoria Empresarial | Cravinhos, SP</title>
+<meta name="description" content="Escritório de contabilidade no Centro de Cravinhos: abertura de empresa, MEI, notas fiscais, impostos e regularização de CNPJ. Rua XV de Novembro, 612, sala 106.">
+<!-- DEMO: remover a linha abaixo quando publicar no dominio definitivo do cliente -->
+<meta name="robots" content="noindex, nofollow">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20viewBox%3D%270%200%2032%2032%27%3E%3Crect%20width%3D%2732%27%20height%3D%2732%27%20rx%3D%276%27%20fill%3D%27%231336FD%27%2F%3E%3Ctext%20x%3D%2716%27%20y%3D%2722%27%20font-family%3D%27Arial%27%20font-weight%3D%27700%27%20font-size%3D%2714%27%20fill%3D%27white%27%20text-anchor%3D%27middle%27%3EPA%3C%2Ftext%3E%3C%2Fsvg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@300..700&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "AccountingService",
+  "name": "Pedro Azevedo Contabilidade & Assessoria Empresarial",
+  "telephone": "+55-16-99111-8661",
+  "address": { "@type": "PostalAddress", "streetAddress": "Rua XV de Novembro, 612, sala 106 - Centro", "addressLocality": "Cravinhos", "addressRegion": "SP", "postalCode": "14140-000", "addressCountry": "BR" },
+  "geo": { "@type": "GeoCoordinates", "latitude": -21.3393006, "longitude": -47.7303089 },
+  "openingHoursSpecification": [
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"], "opens": "08:00", "closes": "17:00" }
+  ],
+  "aggregateRating": { "@type": "AggregateRating", "ratingValue": "5.0", "reviewCount": "257" }
+}
+</script>
+<style>
+  /* ============================================================
+     IDENTIDADE - a marca que ele ja tem (feita por designer):
+     monograma "PA" em azul-eletrico #1336FD, nome em grafite,
+     escritorio com ripado de madeira. Branco + nevoa do azul,
+     raio unico, linhas finas: sobrio, como pede o CFC.
+     ============================================================ */
+  :root {
+    color-scheme: only light;
+    --branco:   #FFFFFF;
+    --nevoa:    #F2F4FF;   /* azul da marca bem diluido */
+    --linha:    #E3E6F2;
+    --linha-forte: #8E93A8;/* contorno de controle: 3:1 */
+    --tinta:    #23262B;   /* 15:1 no branco */
+    --tinta-2:  #5A5F69;   /* 6.4:1 no branco, 5.9:1 na nevoa */
+    --azul:     #1336FD;   /* logo: 7.1:1 no branco */
+    --azul-escuro: #0E28C4;
+    --marinho:  #0A1450;   /* fundo escuro da abertura */
+    --azul-claro: #C9D3FF; /* azul sobre o marinho: 11.6:1 */
+    --amarelo:  #FFF0A6;
+    --amarelo-borda: #8A6D00;
+    --raio:     12px;
+
+    --fonte: "Sora", "Sora reserva", Arial, sans-serif;
+    --largura: 1200px;
+    --margem: clamp(16px, 4vw, 40px);
+  }
+  @font-face { font-family: "Sora reserva"; src: local("Arial"); size-adjust: 111%; }   /* medido com canvas: Sora = Arial x 1,127 (texto) e 1,071 (titulo) */
+
+  /* ---------- base ---------- */
+  *, *::before, *::after { box-sizing: border-box; }
+  html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+  @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+  body { margin: 0; background: var(--branco); color: var(--tinta); font: 400 1.0625rem/1.65 var(--fonte); -webkit-tap-highlight-color: transparent; }
+  img { max-width: 100%; height: auto; display: block; }
+  figure { margin: 0; }
+  a { color: var(--azul); text-underline-offset: .18em; }
+  a, button, input, select, label { touch-action: manipulation; }
+  :focus-visible { outline: 3px solid var(--azul); outline-offset: 3px; }
+  h1, h2, h3 { font-family: var(--fonte); font-weight: 600; line-height: 1.12; margin: 0; letter-spacing: -.02em; text-wrap: balance; overflow-wrap: break-word; }
+  h2 { font-size: clamp(1.9rem, 1.4rem + 2vw, 2.8rem); }
+  h3 { font-size: 1.25rem; letter-spacing: -.01em; }
+  p { margin: 0; }
+  p, li, label, dd, dt, small, legend, figcaption, .btn { overflow-wrap: anywhere; }
+  .envoltorio { max-width: var(--largura); margin-inline: auto; padding-inline: var(--margem); }
+  .a-preencher { background: var(--amarelo); box-shadow: inset 0 -2px 0 var(--amarelo-borda); padding: 0 .25em; color: var(--tinta); }
+  .so-leitor { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+  .pular { position: absolute; left: 1rem; top: -5rem; z-index: 50; padding: .8rem 1rem; background: var(--branco); color: var(--tinta); }
+  .pular:focus { top: 1rem; }
+
+  /* botoes */
+  .btn {
+    display: inline-flex; align-items: center; justify-content: center; gap: .55rem; max-width: 100%;
+    min-height: 52px; padding: .75rem 1.35rem; border: 0; border-radius: 10px;
+    background: var(--azul); color: #fff; font: 600 1rem/1.2 var(--fonte); text-decoration: none; text-align: center; cursor: pointer;
+    transition: background-color .2s, transform .2s;
+  }
+  .btn:hover { background: var(--azul-escuro); }
+  .btn:active { transform: translateY(1px); }
+  .btn svg { width: 1.3em; height: 1.3em; flex: none; }
+  .btn-branco { background: #fff; color: var(--azul); }
+  .btn-branco:hover { background: #E8ECFF; }
+  .btn-vidro { background: rgba(255, 255, 255, .08); color: #fff; box-shadow: inset 0 0 0 1.5px rgba(255, 255, 255, .7); }
+  .btn-vidro:hover { background: rgba(255, 255, 255, .16); }
+  .btn-linha { background: var(--branco); color: var(--azul); box-shadow: inset 0 0 0 1.5px var(--linha-forte); }
+  .btn-linha:hover { box-shadow: inset 0 0 0 1.5px var(--azul); background: var(--nevoa); }
+  @media (prefers-reduced-motion: reduce) { .btn { transition: none; } .btn:active { transform: none; } }
+
+  /* ---------- topo ---------- */
+  .topo { position: relative; z-index: 20; background: var(--branco); border-bottom: 1px solid var(--linha); }
+  .topo-grade { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: .75rem 1.5rem; padding-block: .9rem; }
+  .marca { display: inline-flex; align-items: center; gap: .7rem; min-width: 0; min-height: 44px; text-decoration: none; color: var(--tinta); }
+  .marca img { width: auto; height: 42px; }
+  .marca-nome { display: grid; line-height: 1.1; }
+  .marca-nome strong { font-size: 1.2rem; font-weight: 600; letter-spacing: -.01em; }
+  .marca-nome span { font-size: .8rem; color: var(--tinta-2); font-weight: 400; }
+  .menu { display: flex; flex-wrap: wrap; gap: .25rem 1.5rem; align-items: center; }
+  .menu a { color: var(--tinta); text-decoration: none; padding: .55rem 0; font-weight: 500; font-size: .98rem; }
+  .menu a:hover { color: var(--azul); text-decoration: underline; }
+  .menu .menu-tel { color: var(--azul); font-weight: 600; }
+  /* botao do menu (so no celular): 3 barrinhas retas no azul do logo; viram X ao abrir */
+  .menu-botao { display: none; }
+  @media (max-width: 920px) {
+    .topo-grade { flex-wrap: nowrap; }
+    .menu-botao {
+      display: grid; align-content: center; justify-items: center; gap: 5px; flex: none; width: 52px; height: 52px; margin-right: -8px; padding: 0;
+      border: 0; border-radius: var(--raio); background: none; cursor: pointer;
+    }
+    .menu-botao span { display: block; width: 28px; height: 4px; border-radius: 4px; background: var(--azul); transition: transform .25s cubic-bezier(.2, .7, .2, 1), opacity .2s, background-color .25s; }
+    .menu-botao:hover span { background: var(--azul-escuro); }
+    .menu-aberto .menu-botao span:nth-child(1) { transform: translateY(9px) rotate(45deg); }
+    .menu-aberto .menu-botao span:nth-child(2) { opacity: 0; }
+    .menu-aberto .menu-botao span:nth-child(3) { transform: translateY(-9px) rotate(-45deg); }
+    /* o menu desce por baixo do topo, por cima da pagina */
+    .menu {
+      display: none; position: absolute; top: 100%; left: 0; right: 0;
+      grid-template-columns: minmax(0, 1fr); gap: 0; padding: .5rem var(--margem) 1.25rem;
+      background: var(--branco); border-bottom: 1px solid var(--linha); box-shadow: 0 18px 30px -22px rgba(10, 20, 80, .55);
+    }
+    .menu-aberto .menu { display: grid; }
+    .menu a { display: flex; align-items: center; min-height: 52px; padding: .5rem 0; border-bottom: 1px solid var(--linha); font-size: 1.15rem; }
+    .menu a:hover { text-decoration: none; }
+    .menu .menu-tel { border-bottom: 0; margin-top: .4rem; }
+  }
+  @media (max-width: 920px) and (prefers-reduced-motion: no-preference) {
+    .menu-aberto .menu { animation: menu-desce .22s cubic-bezier(.2, .7, .2, 1); }
+  }
+  @keyframes menu-desce { from { opacity: 0; transform: translateY(-8px); } }
+  @media (prefers-reduced-motion: reduce) { .menu-botao span { transition: none; } }
+
+  /* ---------- abertura: a foto da recepcao ocupa tudo ---------- */
+  .abertura { position: relative; isolation: isolate; display: grid; grid-template-rows: 1fr auto; min-height: clamp(540px, 80vh, 760px); overflow: hidden; color: #fff; background: var(--marinho); }
+  .abertura-fundo { position: absolute; inset: 0; z-index: -2; width: 100%; height: 100%; object-fit: cover; object-position: 70% 50%; }
+  .abertura::before { content: ""; position: absolute; inset: 0; z-index: -1;
+    background: linear-gradient(90deg, rgba(10, 20, 80, .95) 0%, rgba(10, 20, 80, .88) 36%, rgba(10, 20, 80, .4) 64%, rgba(10, 20, 80, .08) 88%); }
+  .abertura-conteudo { align-self: center; display: grid; grid-template-columns: minmax(0, 38rem); gap: 1.4rem; width: 100%; padding-block: clamp(3rem, 8vw, 5.5rem); }
+  .abertura h1 { font-size: clamp(2.3rem, 1.5rem + 3.2vw, 3.9rem); font-weight: 600; line-height: 1.06; letter-spacing: -.03em; }
+  .abertura-conteudo > p { font-size: clamp(1.05rem, 1rem + .3vw, 1.2rem); color: #DCE2FF; max-width: 33rem; }
+  .abertura-acoes { display: flex; flex-wrap: wrap; gap: .75rem; }
+  .nota { display: flex; flex-wrap: wrap; align-items: center; gap: .3rem .7rem; color: #fff; font-weight: 500; }
+  .estrelas { display: inline-flex; gap: 2px; color: #FFD25A; }
+  .estrelas svg { width: 1.05rem; height: 1.05rem; }
+  .nota a { color: var(--azul-claro); }
+  @media (max-width: 760px) {
+    .abertura { min-height: 0; }
+    .abertura::before { background: linear-gradient(180deg, rgba(10, 20, 80, .5) 0%, rgba(10, 20, 80, .88) 42%, rgba(10, 20, 80, .97) 100%); }
+    .abertura-conteudo { padding-top: clamp(6rem, 30vw, 9rem); padding-bottom: 2.5rem; }
+  }
+  /* faixa: aberto agora */
+  .agora { background: rgba(10, 20, 80, .94); border-top: 1px solid rgba(255, 255, 255, .14); }
+  .agora-grade { display: flex; flex-wrap: wrap; align-items: center; gap: .5rem 2rem; padding-block: .95rem; font-weight: 500; }
+  .agora-item { display: inline-flex; align-items: center; gap: .6rem; min-width: 0; }
+  .agora i { width: .65rem; height: .65rem; border-radius: 50%; background: #5BE38F; flex: none; }
+  .agora .fechado i { background: #FF8F87; }
+
+  /* ---------- secoes ---------- */
+  .secao { padding-block: clamp(3.25rem, 7vw, 5.5rem); }
+  .secao-nevoa { background: var(--nevoa); }
+  .cabeca { display: grid; grid-template-columns: minmax(0, 1fr); gap: .8rem; max-width: 46rem; margin-bottom: 2.25rem; }
+  .cabeca p { color: var(--tinta-2); font-size: 1.08rem; }
+  .ressalva { font-size: .92rem; color: var(--tinta-2); }
+
+  /* ---------- guia: o que voce precisa resolver? ----------
+     a opcao escolhida fica branca e encaixa no painel, como aba de pasta.
+     no celular o painel desce logo abaixo da opcao (order via JS) */
+  .guia-grade { display: grid; grid-template-columns: minmax(0, 21rem) minmax(0, 1fr); grid-template-rows: repeat(5, auto) 1fr; }
+  .guia-opcao { position: relative; grid-column: 1; display: grid; gap: .15rem; min-height: 64px; padding: 1rem 1.25rem; border-radius: var(--raio) 0 0 var(--raio); cursor: pointer; transition: background-color .2s; }
+  .guia-opcao + .guia-opcao { box-shadow: inset 0 1px 0 var(--linha); }
+  .guia-opcao:hover { background: rgba(255, 255, 255, .55); }
+  .guia-opcao-titulo { font-weight: 600; font-size: 1.05rem; line-height: 1.3; }
+  .guia-opcao-resumo { font-size: .92rem; color: var(--tinta-2); line-height: 1.4; }
+  .guia-opcao:has(input:checked) { background: var(--branco); box-shadow: none; }
+  .guia-opcao:has(input:checked) + .guia-opcao { box-shadow: none; }
+  .guia-opcao:has(input:checked) .guia-opcao-titulo { color: var(--azul); }
+  .guia-opcao:has(input:focus-visible) { outline: 3px solid var(--azul); outline-offset: -3px; }
+  .guia-painel { grid-column: 2; grid-row: 1 / -1; display: grid; grid-template-columns: minmax(0, 1fr); gap: 1.75rem; align-content: start; padding: clamp(1.5rem, 3vw, 2.5rem); background: var(--branco); border-radius: 0 var(--raio) var(--raio) var(--raio); }
+  .guia-painel.trocou > * { animation: guia-entra .25s cubic-bezier(.2, .7, .2, 1); }
+  @keyframes guia-entra { from { opacity: 0; transform: translateY(6px); } }
+  @media (prefers-reduced-motion: reduce) { .guia-painel.trocou > * { animation: none; } .guia-opcao { transition: none; } }
+  .guia-painel h3 { font-size: clamp(1.4rem, 1.2rem + .8vw, 1.75rem); }
+  .guia-colunas { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 17rem), 1fr)); gap: 1.75rem 2.5rem; }
+  .guia-colunas h4 { margin: 0 0 .5rem; font-size: .95rem; font-weight: 600; color: var(--tinta-2); }
+  .guia-envolve { margin: 0; padding: 0; list-style: none; }
+  .guia-envolve li { padding: .6rem 0; border-bottom: 1px solid var(--linha); }
+  .guia-envolve li:first-child { padding-top: .2rem; }
+  .guia-docs { margin: 0; padding: 0; list-style: none; }
+  .guia-docs label { display: flex; align-items: flex-start; gap: .75rem; min-height: 44px; padding: .55rem 0; border-bottom: 1px solid var(--linha); cursor: pointer; }
+  .guia-docs li:first-child label { padding-top: .2rem; }
+  .guia-docs input { flex: none; width: 1.25rem; height: 1.25rem; margin: .2rem 0 0; accent-color: var(--azul); cursor: pointer; }
+  .guia-dica { margin-top: .6rem; font-size: .92rem; color: var(--tinta-2); }
+  .guia-envio { display: grid; grid-template-columns: minmax(0, 1fr); gap: 1rem; padding-top: 1.5rem; border-top: 1px solid var(--linha); }
+  .guia-nome { display: grid; grid-template-columns: minmax(0, 1fr); gap: .35rem; max-width: 22rem; font-weight: 500; }
+  .guia-nome input { width: 100%; min-width: 0; min-height: 48px; padding: .6rem .85rem; border: 0; border-radius: 10px; box-shadow: inset 0 0 0 1.5px var(--linha-forte); font: 400 1rem var(--fonte); color: var(--tinta); background: var(--branco); }
+  .guia-nome input:focus-visible { outline: 3px solid var(--azul); outline-offset: 1px; box-shadow: inset 0 0 0 1.5px var(--azul); }
+  .guia-previa { display: grid; gap: .4rem; max-width: 36rem; }
+  .guia-previa span { font-size: .92rem; color: var(--tinta-2); }
+  .guia-balao { padding: .85rem 1rem; border-radius: var(--raio) 4px var(--raio) var(--raio); background: #D9FDD3; color: var(--tinta); font-size: .98rem; line-height: 1.5; overflow-wrap: anywhere; }
+  .guia-acoes { display: flex; flex-wrap: wrap; align-items: center; gap: .75rem 1.25rem; }
+  .guia-acoes small { font-size: .9rem; color: var(--tinta-2); }
+  .guia-outro { margin-top: 1.5rem; color: var(--tinta-2); }
+  @media (max-width: 820px) {
+    .guia-grade { grid-template-columns: minmax(0, 1fr); grid-template-rows: none; }
+    .guia-opcao { border-radius: var(--raio); }
+    .guia-opcao:has(input:checked) { border-radius: var(--raio) var(--raio) 0 0; }
+    .guia-painel { grid-column: 1; grid-row: auto; border-radius: 0 0 var(--raio) var(--raio); padding: .75rem 1.25rem 1.5rem; }   /* 1.25rem = o recuo do texto da opcao */
+    /* o titulo ja esta na opcao logo acima: so o leitor de tela le de novo */
+    .guia-painel h3 { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+    .guia-painel { position: relative; }
+  }
+
+  /* ---------- servicos: foto | lista, depois lista | foto ---------- */
+  .servicos-par { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: clamp(1.75rem, 5vw, 4.5rem); align-items: center; }
+  .servicos-par + .servicos-par { margin-top: clamp(3rem, 7vw, 5rem); }
+  .servicos-foto { margin: 0; }
+  .servicos-foto img { width: 100%; aspect-ratio: 4 / 4.4; object-fit: cover; border-radius: var(--raio); }
+  .servicos-par-inverso .servicos-foto { order: 2; }
+  .servicos-texto { display: grid; grid-template-columns: minmax(0, 1fr); gap: 1rem; }
+  .servicos-texto h3 { font-size: clamp(1.45rem, 1.2rem + 1vw, 1.9rem); }
+  .servicos-texto > p { color: var(--tinta-2); }
+  .servicos-lista { margin: .5rem 0 0; padding: 0; list-style: none; }
+  .servicos-lista li { display: grid; gap: .1rem; padding: .85rem 0; border-top: 1px solid var(--linha); }
+  .servicos-lista li:last-child { border-bottom: 1px solid var(--linha); }
+  .servicos-lista strong { font-weight: 600; }
+  .servicos-lista span { color: var(--tinta-2); font-size: .98rem; }
+  .servicos-lista span.a-preencher { justify-self: start; }
+  /* lembrete do DAS: folhinha de calendario com o dia 20 */
+  .das { display: flex; align-items: flex-start; gap: 1.1rem; margin-top: .75rem; padding: 1.1rem 1.25rem; border-radius: var(--raio); background: var(--nevoa); }
+  .das-folha { flex: none; display: grid; width: 4.5rem; overflow: hidden; border-radius: 10px; background: var(--branco); box-shadow: inset 0 0 0 1px var(--linha); text-align: center; }
+  .das-folha span { padding: .15rem 0; background: var(--azul); color: #fff; font-size: .8rem; font-weight: 600; }
+  .das-folha strong { padding: .25rem 0 .35rem; font-size: 1.9rem; font-weight: 600; line-height: 1.1; letter-spacing: -.02em; }
+  .das-texto { display: grid; grid-template-columns: minmax(0, 1fr); gap: .3rem; min-width: 0; }
+  .das-texto h4 { margin: 0; font-size: 1.05rem; font-weight: 600; }
+  .das-texto small { font-size: .88rem; color: var(--tinta-2); }
+  .das-texto a { justify-self: start; display: inline-flex; align-items: center; min-height: 44px; font-weight: 600; }
+  @media (max-width: 380px) { .das { flex-direction: column; } }
+  @media (max-width: 820px) {
+    .servicos-par { grid-template-columns: minmax(0, 1fr); }
+    .servicos-par-inverso .servicos-foto { order: 0; }
+    .servicos-foto img { aspect-ratio: 16 / 10; }
+  }
+
+  /* ---------- escritorio: 2 fotos de larguras diferentes ---------- */
+  .escritorio-fotos { display: grid; grid-template-columns: minmax(0, 1.5fr) minmax(0, 1fr); gap: clamp(.75rem, 1.5vw, 1.25rem); margin: 0; padding: 0; list-style: none; }
+  .escritorio-fotos figure { display: grid; gap: .5rem; }
+  .escritorio-fotos img { width: 100%; height: clamp(16rem, 30vw, 24rem); object-fit: cover; border-radius: var(--raio); }
+  .escritorio-fotos figcaption { font-size: .92rem; color: var(--tinta-2); }
+  @media (max-width: 720px) {
+    .escritorio-fotos { grid-template-columns: minmax(0, 1fr); }
+    .escritorio-fotos img { height: auto; aspect-ratio: 4 / 3; }
+  }
+
+  /* ---------- contato ---------- */
+  .contato-grade { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.15fr); gap: clamp(1.75rem, 5vw, 3.5rem); }
+  .contato-dados { display: grid; grid-template-columns: minmax(0, 1fr); gap: 1.4rem; align-content: start; }
+  .contato-dados h3 { font-size: .9rem; font-weight: 500; color: var(--tinta-2); letter-spacing: 0; }
+  .tel-grande { font: 600 clamp(1.7rem, 1.3rem + 1.6vw, 2.3rem)/1.15 var(--fonte); letter-spacing: -.02em; color: var(--tinta); text-decoration: none; font-variant-numeric: lining-nums; }
+  .tel-grande:hover { color: var(--azul); }
+  .link-mapa { display: inline-flex; align-items: center; min-height: 44px; font-weight: 600; }
+  .horarios { margin: 0; display: grid; grid-template-columns: minmax(0, 1fr); }
+  .horarios div { display: flex; flex-wrap: wrap; justify-content: space-between; gap: .25rem 1rem; padding: .45rem 0; border-bottom: 1px solid var(--linha); }
+  .horarios div.hoje { font-weight: 600; }
+  .horarios dd { margin: 0; font-variant-numeric: tabular-nums; }
+  .predio { display: grid; gap: .4rem; margin-top: .5rem; max-width: 360px; }
+  .predio img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; border-radius: var(--raio); }
+  .predio figcaption { font-size: .92rem; color: var(--tinta-2); }
+  .mapa { width: 100%; height: 100%; min-height: 380px; border: 0; border-radius: var(--raio); background: var(--linha); }
+  @media (max-width: 820px) { .contato-grade { grid-template-columns: minmax(0, 1fr); } .mapa { min-height: 280px; } }
+
+  /* ---------- rodape compacto ---------- */
+  .rodape { border-top: 1px solid var(--linha); color: var(--tinta-2); padding-block: 1.3rem; font-size: .9rem; }
+  .rodape-grade { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: .75rem 2.5rem; }
+  .rodape-grade > * { min-width: 0; max-width: 100%; }
+  .rodape .marca img { height: 30px; }
+  .rodape .marca-nome strong { font-size: 1rem; }
+  .rodape-dir { display: flex; flex-wrap: wrap; align-items: center; gap: .25rem 1.5rem; }
+  @media (max-width: 700px) { .rodape-grade { flex-direction: column; align-items: flex-start; } }
+
+  /* ---------- WhatsApp no canto (em qualquer tela; sem barra fixa no celular) ---------- */
+  .zap-flutuante {
+    display: grid; place-items: center; position: fixed; z-index: 40;
+    right: max(clamp(16px, 2vw, 28px), env(safe-area-inset-right)); bottom: calc(clamp(16px, 2vw, 28px) + env(safe-area-inset-bottom));
+    width: 62px; height: 62px; border-radius: 50%; background: #179A48; color: #fff;   /* verde do WhatsApp escurecido: 3.6:1 no branco */
+    box-shadow: 0 10px 28px -10px rgba(23, 154, 72, .7), 0 2px 6px rgba(10, 20, 80, .18);
+    opacity: 0; transform: translateY(12px); pointer-events: none; transition: opacity .25s, transform .25s, background-color .2s;
+  }
+  .zap-flutuante.visivel { opacity: 1; transform: none; pointer-events: auto; }
+  .zap-flutuante:hover { background: #12803B; }
+  .zap-flutuante svg { width: 32px; height: 32px; }
+  @media (max-width: 600px) { .zap-flutuante { width: 56px; height: 56px; } .zap-flutuante svg { width: 28px; height: 28px; } }
+  @media (prefers-reduced-motion: reduce) { .zap-flutuante { transition: none; transform: none; } }
+</style>
+</head>
+<body>
+<a class="pular" href="#conteudo">Pular para o conteúdo</a>
+
+<header class="topo">
+  <div class="envoltorio topo-grade">
+    <a class="marca" href="#" translate="no">
+      <img src="img/marca-azul.webp" width="205" height="240" alt="">
+      <span class="marca-nome"><strong>Pedro Azevedo</strong><span>Contabilidade &amp; Assessoria Empresarial</span></span>
+    </a>
+    <button class="menu-botao" type="button" id="menu-botao" aria-expanded="false" aria-controls="menu" aria-label="Abrir menu"><span></span><span></span><span></span></button>
+    <nav class="menu" id="menu" aria-label="Principal">
+      <a href="#guia">O que você precisa</a>
+      <a href="#servicos">Serviços</a>
+      <a href="#escritorio">Escritório</a>
+      <a href="#contato">Contato</a>
+      <a class="menu-tel" href="tel:+5516991118661">(16) 99111-8661</a>
+    </nav>
+  </div>
+</header>
+
+<section class="abertura" aria-labelledby="titulo">
+  <img class="abertura-fundo" src="img/recepcao.webp" width="1600" height="1200" alt="Recepção do escritório Pedro Azevedo, com painel ripado de madeira, poltronas e a marca na tela" fetchpriority="high">
+  <div class="envoltorio abertura-conteudo">
+    <h1 id="titulo">Contabilidade e assessoria para quem empreende em Cravinhos</h1>
+    <p>Abertura de empresa, MEI, notas fiscais, impostos e regularização de CNPJ, com atendimento próximo, no Centro da cidade.</p>
+    <div class="abertura-acoes">
+      <a class="btn btn-branco" id="zap-topo" href="https://wa.me/5516991118661" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.5-.3Z"/></svg>
+        Falar com o escritório
+      </a>
+      <a class="btn btn-vidro" href="#guia">O que você precisa resolver?</a>
+    </div>
+    <p class="nota"><span class="estrelas" aria-hidden="true"><svg viewBox="0 0 24 24"><path fill="currentColor" d="m12 2.8 2.8 5.8 6.3.9-4.6 4.4 1.1 6.3L12 17.3l-5.6 2.9 1.1-6.3-4.6-4.4 6.3-.9Z"/></svg><svg viewBox="0 0 24 24"><path fill="currentColor" d="m12 2.8 2.8 5.8 6.3.9-4.6 4.4 1.1 6.3L12 17.3l-5.6 2.9 1.1-6.3-4.6-4.4 6.3-.9Z"/></svg><svg viewBox="0 0 24 24"><path fill="currentColor" d="m12 2.8 2.8 5.8 6.3.9-4.6 4.4 1.1 6.3L12 17.3l-5.6 2.9 1.1-6.3-4.6-4.4 6.3-.9Z"/></svg><svg viewBox="0 0 24 24"><path fill="currentColor" d="m12 2.8 2.8 5.8 6.3.9-4.6 4.4 1.1 6.3L12 17.3l-5.6 2.9 1.1-6.3-4.6-4.4 6.3-.9Z"/></svg><svg viewBox="0 0 24 24"><path fill="currentColor" d="m12 2.8 2.8 5.8 6.3.9-4.6 4.4 1.1 6.3L12 17.3l-5.6 2.9 1.1-6.3-4.6-4.4 6.3-.9Z"/></svg></span>5,0 no Google, com 257 avaliações. <a href="https://www.google.com/maps/place/Pedro+Azevedo+%7C+Contabilidade+%26+Assessoria+Empresarial/@-21.3393006,-47.7303089,17z/data=!4m8!3m7!1s0x94b9cbc5550963bb:0xfd51b103e82430f0!8m2!3d-21.3393006!4d-47.7303089!9m1!1b1" target="_blank" rel="noopener">Ler as avaliações</a></p>
+  </div>
+  <div class="agora" aria-live="polite">
+    <div class="envoltorio agora-grade">
+      <span class="agora-item" id="status"><i aria-hidden="true"></i><span>Horário de atendimento</span></span>
+    </div>
+  </div>
+</section>
+
+<main id="conteudo">
+  <section class="secao secao-nevoa" id="guia" aria-labelledby="titulo-guia">
+    <div class="envoltorio">
+      <div class="cabeca">
+        <h2 id="titulo-guia">O que você precisa resolver?</h2>
+        <p>Escolha a situação. Mostramos o que ela envolve e os documentos para separar antes de falar com o escritório.</p>
+      </div>
+      <div class="guia-grade" id="guia-grade">
+        <!-- as opcoes entram aqui pelo script, a partir de GUIA -->
+        <div class="guia-painel" id="guia-painel">
+          <h3 id="guia-titulo" aria-live="polite">&nbsp;</h3>
+          <div class="guia-colunas">
+            <div><h4>O que envolve</h4><ul class="guia-envolve" id="guia-envolve"></ul></div>
+            <div>
+              <h4 id="guia-docs-titulo">Documentos para separar</h4>
+              <ul class="guia-docs" id="guia-docs" aria-labelledby="guia-docs-titulo"></ul>
+              <p class="guia-dica">Marque o que você já tem: isso entra na mensagem. Esta é uma lista básica para começar; o escritório confirma o que mais for necessário para o seu caso.</p>
+            </div>
+          </div>
+          <div class="guia-envio">
+            <label class="guia-nome">Nome (opcional)<input type="text" id="guia-nome" autocomplete="name" maxlength="60"></label>
+            <div class="guia-previa"><span>Prévia da mensagem</span><p class="guia-balao" id="guia-balao"></p></div>
+            <div class="guia-acoes">
+              <a class="btn" id="guia-enviar" href="https://wa.me/5516991118661" target="_blank" rel="noopener">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.5-.3Z"/></svg>
+                Enviar pelo WhatsApp
+              </a>
+              <small>A mensagem abre pronta e pode ser editada antes do envio.</small>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p class="guia-outro">É outro assunto? <a id="zap-outro" href="https://wa.me/5516991118661" target="_blank" rel="noopener">Fale com o escritório pelo WhatsApp</a>.</p>
+    </div>
+  </section>
+
+  <section class="secao" id="servicos" aria-labelledby="titulo-servicos">
+    <div class="envoltorio">
+      <div class="cabeca">
+        <h2 id="titulo-servicos">Serviços</h2>
+        <p>Cuidamos da rotina contábil e fiscal para que você se dedique ao seu negócio.</p>
+      </div>
+
+      <div class="servicos-par">
+        <figure class="servicos-foto"><img src="img/sala-reuniao.webp" width="1050" height="1400" loading="lazy" alt="Sala de reunião do escritório, com painel ripado de madeira, mesa e televisão com a marca Pedro Azevedo"></figure>
+        <div class="servicos-texto">
+          <h3>Para a sua empresa</h3>
+          <p>Acompanhamento mensal de empresas do Simples Nacional e dos demais regimes.</p>
+          <ul class="servicos-lista">
+            <li><strong>Contabilidade mensal</strong><span>Escrituração, balancetes e demonstrações contábeis.</span></li>
+            <li><strong>Impostos e obrigações</strong><span>Apuração dos tributos, emissão das guias e entrega das declarações.</span></li>
+            <li><strong>Consultoria contábil e tributária</strong><span>Orientação sobre o regime de tributação e as decisões que afetam os impostos.</span></li>
+            <li><strong>Gestão empresarial</strong><span>Apoio na organização financeira e administrativa da empresa.</span></li>
+            <li><strong>Folha de pagamento</strong><span class="a-preencher">a confirmar com o escritório</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="servicos-par servicos-par-inverso">
+        <figure class="servicos-foto"><img src="img/sala-atendimento.webp" width="1050" height="1400" loading="lazy" style="object-position: 50% 78%" alt="Sala de atendimento individual, com mesa de madeira, cadeiras e estante"></figure>
+        <div class="servicos-texto">
+          <h3>Para MEI e quem está começando</h3>
+          <p>Da abertura do CNPJ às obrigações de cada mês, com atendimento próximo.</p>
+          <ul class="servicos-lista">
+            <li><strong>Abertura de MEI e de empresas</strong><span>Escolha do formato adequado e todo o registro.</span></li>
+            <li><strong>Obrigações do MEI</strong><span>Guia mensal (DAS) e declaração anual.</span></li>
+            <li><strong>Notas fiscais</strong><span>Cadastro no emissor e orientação para emitir as notas.</span></li>
+            <li><strong>Regularização e baixa de CNPJ</strong><span>Declarações em atraso, parcelamento de débitos e encerramento.</span></li>
+            <li><strong>Imposto de Renda pessoa física</strong><span class="a-preencher">a confirmar com o escritório</span></li>
+          </ul>
+          <div class="das" id="das">
+            <p class="das-folha" aria-hidden="true"><span id="das-mes">mês</span><strong>20</strong></p>
+            <div class="das-texto">
+              <h4>Guia mensal do MEI (DAS)</h4>
+              <p id="das-texto">Vence todo dia 20.</p>
+              <small>Quando o dia 20 cai em fim de semana ou feriado, confirme a data com o escritório.</small>
+              <a id="zap-das" href="https://wa.me/5516991118661" target="_blank" rel="noopener">Pedir ajuda com a guia pelo WhatsApp</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="secao secao-nevoa" id="escritorio" aria-labelledby="titulo-escritorio">
+    <div class="envoltorio">
+      <div class="cabeca">
+        <h2 id="titulo-escritorio">Nosso escritório</h2>
+        <p>Atendemos no Centro de Cravinhos, no prédio New Center, com recepção, sala de reunião e sala de atendimento individual.</p>
+      </div>
+      <ul class="escritorio-fotos">
+        <li><figure><img src="img/predio-dentro.webp" width="1400" height="1050" loading="lazy" alt="Área interna do prédio New Center, com claraboia, escada de vidro e plantas"><figcaption>A área interna do prédio New Center.</figcaption></figure></li>
+        <li><figure><img src="img/estacoes-recorte.webp" width="928" height="891" loading="lazy" alt="Estações de trabalho com computadores e impressora"><figcaption>As estações de trabalho da equipe.</figcaption></figure></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="secao" id="contato" aria-labelledby="titulo-contato">
+    <div class="envoltorio contato-grade">
+      <div class="contato-dados">
+        <h2 id="titulo-contato">Como chegar</h2>
+        <div><h3>WhatsApp e telefone</h3><a class="tel-grande" id="zap-contato" href="https://wa.me/5516991118661" target="_blank" rel="noopener">(16) 99111-8661</a></div>
+        <div><h3>Endereço</h3><p>Rua XV de Novembro, 612, sala 106<br>Prédio New Center, Centro, Cravinhos</p><p><a class="link-mapa" href="https://www.google.com/maps/dir/?api=1&amp;destination=-21.3393006,-47.7303089" target="_blank" rel="noopener">Abrir no mapa</a></p>
+          <figure class="predio"><img src="img/predio-fachada.webp" width="1050" height="1400" loading="lazy" alt="Fachada do prédio New Center XV de Novembro, com vidro azul e escada de entrada"><figcaption>O escritório fica no prédio New Center.</figcaption></figure></div>
+        <div><h3>Horário</h3><dl class="horarios" id="horarios"></dl></div>
+      </div>
+      <iframe class="mapa" title="Mapa: Pedro Azevedo Contabilidade na Rua XV de Novembro, 612, Cravinhos" loading="lazy"
+        src="https://maps.google.com/maps?q=-21.3393006,-47.7303089&amp;hl=pt-BR&amp;z=17&amp;output=embed" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+  </section>
+</main>
+
+<footer class="rodape">
+  <div class="envoltorio rodape-grade">
+    <a class="marca" href="#" translate="no"><img src="img/marca-azul.webp" width="205" height="240" alt=""><span class="marca-nome"><strong>Pedro Azevedo</strong><span>Contabilidade &amp; Assessoria Empresarial</span></span></a>
+    <div class="rodape-dir">
+      <p>CNPJ 32.796.235/0001-28</p>
+      <p>CRC <span class="a-preencher">a confirmar</span></p>
+      <p>© 2026 Pedro Azevedo Contabilidade</p>
+    </div>
+  </div>
+</footer>
+
+<a class="zap-flutuante" id="zap-flutuante" href="https://wa.me/5516991118661" target="_blank" rel="noopener" aria-label="Falar com o escritório no WhatsApp" title="Falar no WhatsApp" tabindex="-1">
+  <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.5-.3Z"/></svg>
+</a>
+
+<script>
+/* ============================================================
+   DADOS - o que o escritorio muda fica aqui em cima
+   ============================================================ */
+const WHATSAPP = "5516991118661";
+/* horario de atendimento (Google Maps): 0 = domingo */
+const HORARIO = { 0: [], 1: [["08:00", "17:00"]], 2: [["08:00", "17:00"]], 3: [["08:00", "17:00"]], 4: [["08:00", "17:00"]], 5: [["08:00", "17:00"]], 6: [] };
+
+/* "O que voce precisa resolver?": cada bloco e uma situacao.
+   pedido = como a situacao aparece na mensagem ("Gostaria de ...").
+   Sem promessa de resultado (CFC). Listas basicas: o escritorio confirma. */
+const GUIA = [
+  {
+    titulo: "Abrir uma empresa", resumo: "Com sócios ou unipessoal",
+    pedido: "abrir uma empresa",
+    envolve: [
+      "Definição das atividades, do tipo de empresa e do regime de tributação",
+      "Registro na Junta Comercial e inscrição no CNPJ",
+      "Inscrição na Prefeitura e, se houver venda de produtos, no Estado",
+      "Licenças e alvará de funcionamento",
+    ],
+    docs: [
+      "RG e CPF de cada sócio",
+      "Comprovante de residência de cada sócio",
+      "Endereço da empresa e IPTU do imóvel",
+      "Descrição das atividades da empresa",
+      "Capital social e a participação de cada sócio",
+    ],
+  },
+  {
+    titulo: "Abrir ou regularizar um MEI", resumo: "Para quem trabalha por conta própria",
+    pedido: "abrir ou regularizar um MEI",
+    envolve: [
+      "Conferência da atividade e do faturamento previsto, que precisam caber nas regras do MEI",
+      "Abertura pelo Portal do Empreendedor",
+      "Orientação sobre a guia mensal (DAS) e a declaração anual",
+      "Para quem já é MEI: conferência de guias e declarações em atraso",
+    ],
+    docs: [
+      "Acesso à conta gov.br (nível prata ou ouro)",
+      "RG e CPF",
+      "Endereço onde a atividade será exercida",
+      "Descrição da atividade",
+    ],
+  },
+  {
+    titulo: "Trocar de contador", resumo: "Transferir a contabilidade da empresa",
+    pedido: "trocar de contador",
+    envolve: [
+      "Contato com o escritório anterior para a transferência dos documentos",
+      "Conferência de guias, declarações e pendências",
+      "Acesso aos sistemas da Receita Federal, do Estado e da Prefeitura",
+      "Continuidade da folha de pagamento, se houver funcionários",
+    ],
+    docs: [
+      "Cartão CNPJ e contrato social",
+      "Últimas guias pagas e declarações entregues",
+      "Certificado digital da empresa, se houver",
+      "Dados da folha de pagamento, se houver funcionários",
+    ],
+  },
+  {
+    titulo: "Regularizar ou dar baixa no CNPJ", resumo: "Débitos, declarações em atraso ou encerramento",
+    pedido: "regularizar ou dar baixa no meu CNPJ",
+    envolve: [
+      "Levantamento de débitos e declarações pendentes na Receita Federal, no Estado e na Prefeitura",
+      "Entrega das declarações em atraso",
+      "Parcelamento dos débitos, quando houver essa possibilidade",
+      "No caso de baixa, o encerramento da empresa nos órgãos",
+    ],
+    docs: [
+      "Número do CNPJ",
+      "Acesso à conta gov.br do responsável",
+      "Guias, declarações e notificações recebidas",
+    ],
+  },
+  {
+    titulo: "Emitir nota fiscal", resumo: "De serviço ou de venda de produtos",
+    pedido: "orientação para emitir nota fiscal",
+    envolve: [
+      "Conferência do tipo de nota que a empresa deve emitir: de serviço ou de produto",
+      "Cadastro no emissor de notas",
+      "Orientação para a primeira emissão",
+    ],
+    docs: [
+      "Número do CNPJ",
+      "Acesso à conta gov.br",
+      "Dados do cliente: nome, CPF ou CNPJ e endereço",
+      "Descrição e valor do serviço ou do produto",
+    ],
+  },
+];
+
+/* ============================================================ */
+const $ = (s) => document.querySelector(s);
+const zap = (t) => `https://wa.me/${WHATSAPP}?text=${encodeURIComponent(t)}`;
+const DIAS = ["Domingo", "Segunda", "Terça", "Quarta", "Quinta", "Sexta", "Sábado"];
+
+/* agora em Cravinhos (horario de Brasilia), independente do fuso do aparelho */
+function agoraBrasilia() {
+  const p = Object.fromEntries(new Intl.DateTimeFormat("en-US", { timeZone: "America/Sao_Paulo", year: "numeric", month: "2-digit", day: "2-digit", hour: "2-digit", minute: "2-digit", hourCycle: "h23", weekday: "short" }).formatToParts(new Date()).map((x) => [x.type, x.value]));
+  const dia = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"].indexOf(p.weekday);
+  return { dia, ano: Number(p.year), mes: Number(p.month), diaMes: Number(p.day), hora: Number(p.hour), min: Number(p.hour) * 60 + Number(p.minute) };
+}
+const paraMin = (h) => { const [a, b] = h.split(":").map(Number); return a * 60 + b; };
+const hora = (h) => h.endsWith(":00") ? `${Number(h.slice(0, 2))}h` : h.replace(":", "h");
+
+function situacao() {
+  const a = agoraBrasilia(), hoje = HORARIO[a.dia] || [];
+  const faixa = hoje.find(([i, f]) => a.min >= paraMin(i) && a.min < paraMin(f));
+  if (faixa) return { aberto: true, texto: `Aberto agora, atende até as ${hora(faixa[1])}` };
+  const depois = hoje.find(([i]) => paraMin(i) > a.min);
+  if (depois) return { aberto: false, texto: `Fechado agora, abre às ${hora(depois[0])}. Pelo WhatsApp, deixe sua mensagem.` };
+  for (let k = 1; k <= 7; k++) {
+    const d = (a.dia + k) % 7, f = HORARIO[d];
+    if (f && f.length) return { aberto: false, texto: `Fechado agora, abre ${k === 1 ? "amanhã" : DIAS[d].toLowerCase()} às ${hora(f[0][0])}. Pelo WhatsApp, deixe sua mensagem.` };
+  }
+  return { aberto: false, texto: "Fechado agora" };
+}
+function montarStatus() {
+  const s = situacao(), el = $("#status");
+  el.classList.toggle("fechado", !s.aberto);
+  el.querySelector("span").textContent = s.texto;
+}
+function montarHorarios() {
+  const hoje = agoraBrasilia().dia;
+  $("#horarios").innerHTML = [1, 2, 3, 4, 5, 6, 0].map((d) => {
+    const f = HORARIO[d];
+    const txt = f.length ? f.map(([i, fi]) => `${hora(i)} às ${hora(fi)}`).join(" e ") : "Fechado";
+    return `<div class="${d === hoje ? "hoje" : ""}"><dt>${DIAS[d]}${d === hoje ? " (hoje)" : ""}</dt><dd>${txt}</dd></div>`;
+  }).join("");
+}
+
+/* ---------- WhatsApp flutuante: aparece depois da abertura e sai no rodape ---------- */
+const flutuante = $("#zap-flutuante");
+function mostrarFlutuante() {
+  const passou = $(".abertura").getBoundingClientRect().bottom < 0 && $(".rodape").getBoundingClientRect().top > innerHeight;
+  flutuante.classList.toggle("visivel", passou);
+  flutuante.tabIndex = passou ? 0 : -1;
+}
+addEventListener("scroll", mostrarFlutuante, { passive: true });
+
+/* ---------- WhatsApp ---------- */
+const geral = zap("Olá! Vim pelo site do escritório Pedro Azevedo e gostaria de atendimento.");
+["#zap-topo", "#zap-contato", "#zap-flutuante", "#zap-outro"].forEach((s) => { $(s).href = geral; });
+
+/* ---------- lembrete do DAS do MEI (vence todo dia 20) ---------- */
+const MESES = ["janeiro", "fevereiro", "março", "abril", "maio", "junho", "julho", "agosto", "setembro", "outubro", "novembro", "dezembro"];
+function montarDas() {
+  const a = agoraBrasilia();
+  let ano = a.ano, mes = a.mes;                        /* mes de 1 a 12 */
+  if (a.diaMes > 20) { mes++; if (mes > 12) { mes = 1; ano++; } }
+  const venc = new Date(Date.UTC(ano, mes - 1, 20)), hoje = Date.UTC(a.ano, a.mes - 1, a.diaMes);
+  const faltam = Math.round((venc - hoje) / 864e5);
+  const semana = ["domingo", "segunda-feira", "terça-feira", "quarta-feira", "quinta-feira", "sexta-feira", "sábado"][venc.getUTCDay()];
+  $("#das-mes").textContent = MESES[mes - 1].slice(0, 3) + ".";
+  $("#das-texto").textContent = faltam === 0
+    ? `Vence hoje, ${semana}, 20 de ${MESES[mes - 1]}.`
+    : `Próximo vencimento: ${semana}, 20 de ${MESES[mes - 1]}. ${faltam === 1 ? "Falta 1 dia" : `Faltam ${faltam} dias`}.`;
+  $("#zap-das").href = zap("Olá! Vim pelo site do escritório Pedro Azevedo. Sou MEI e gostaria de ajuda com a guia do DAS deste mês.");
+}
+montarDas();
+
+/* ---------- guia: o que voce precisa resolver? ---------- */
+const guiaGrade = $("#guia-grade"), guiaPainel = $("#guia-painel");
+let guiaAtual = 0;
+/* "Cartao CNPJ" vira "cartao CNPJ" na frase; sigla no comeco (RG, IPTU) fica */
+const minuscula = (t) => /^[A-Z]{2,}\b/.test(t) ? t : t[0].toLowerCase() + t.slice(1);
+
+GUIA.forEach((g, i) => {
+  const op = document.createElement("label");
+  op.className = "guia-opcao";
+  op.innerHTML = `<input class="so-leitor" type="radio" name="guia" value="${i}"${i === 0 ? " checked" : ""}><span class="guia-opcao-titulo"></span><span class="guia-opcao-resumo"></span>`;
+  op.querySelector(".guia-opcao-titulo").textContent = g.titulo;
+  op.querySelector(".guia-opcao-resumo").textContent = g.resumo;
+  op.style.order = i * 2;
+  guiaGrade.insertBefore(op, guiaPainel);
+});
+
+function guiaMensagem() {
+  const g = GUIA[guiaAtual];
+  const nome = $("#guia-nome").value.trim();
+  const tenho = [...document.querySelectorAll("#guia-docs input:checked")].map((c) => minuscula(GUIA[guiaAtual].docs[c.value]));
+  let t = `Olá! Vim pelo site do escritório Pedro Azevedo.${nome ? ` Meu nome é ${nome}.` : ""} Gostaria de ${g.pedido}.`;
+  if (tenho.length) t += ` Já tenho separado: ${tenho.join("; ")}.`;
+  t += " Poderiam me orientar sobre os próximos passos?";
+  $("#guia-balao").textContent = t;
+  $("#guia-enviar").href = zap(t);
+}
+
+function guiaMostrar(i, animar) {
+  guiaAtual = i;
+  const g = GUIA[i];
+  $("#guia-titulo").textContent = g.titulo;
+  $("#guia-envolve").replaceChildren(...g.envolve.map((t) => { const li = document.createElement("li"); li.textContent = t; return li; }));
+  $("#guia-docs").replaceChildren(...g.docs.map((t, k) => {
+    const li = document.createElement("li");
+    li.innerHTML = `<label><input type="checkbox" value="${k}"><span></span></label>`;
+    li.querySelector("span").textContent = t;
+    return li;
+  }));
+  guiaPainel.style.order = i * 2 + 1;   /* no celular o painel desce logo abaixo da opcao */
+  if (animar) { guiaPainel.classList.remove("trocou"); void guiaPainel.offsetWidth; guiaPainel.classList.add("trocou"); }
+  guiaMensagem();
+}
+
+guiaGrade.addEventListener("change", (e) => {
+  if (e.target.name === "guia") guiaMostrar(Number(e.target.value), true);
+  else guiaMensagem();
+});
+$("#guia-nome").addEventListener("input", guiaMensagem);
+guiaMostrar(0, false);
+
+/* ---------- menu do celular ---------- */
+const topo = $(".topo"), menuBotao = $("#menu-botao");
+function menu(abrir) {
+  topo.classList.toggle("menu-aberto", abrir);
+  menuBotao.setAttribute("aria-expanded", String(abrir));
+  menuBotao.setAttribute("aria-label", abrir ? "Fechar menu" : "Abrir menu");
+}
+menuBotao.addEventListener("click", () => menu(!topo.classList.contains("menu-aberto")));
+$("#menu").addEventListener("click", (e) => { if (e.target.closest("a")) menu(false); });
+document.addEventListener("click", (e) => { if (!topo.contains(e.target)) menu(false); });
+document.addEventListener("keydown", (e) => {
+  if (e.key === "Escape" && topo.classList.contains("menu-aberto")) { menu(false); menuBotao.focus(); }
+});
+/* girou o celular ou abriu a janela: no computador o menu e a linha de sempre */
+matchMedia("(min-width: 921px)").addEventListener("change", (m) => { if (m.matches) menu(false); });
+
+montarStatus(); montarHorarios(); mostrarFlutuante();
+setInterval(() => { montarStatus(); montarDas(); }, 60000);
+</script>
+</body>
+</html>
